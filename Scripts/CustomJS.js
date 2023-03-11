@@ -1,17 +1,17 @@
 ﻿function HCR(num) {
     switch (num) {
         case 1:
-            window.localStorage.setItem("loan", "$100,000");
+            window.localStorage.setItem("loan", "€100,000");
             window.localStorage.setItem("rate", "3.92");
             window.localStorage.setItem("term", "360");
             break;
         case 2:
-            window.localStorage.setItem("loan", "$50,000");
+            window.localStorage.setItem("loan", "€50,000");
             window.localStorage.setItem("rate", "4.37");
             window.localStorage.setItem("term", "72");
             break;
         case 3:
-            window.localStorage.setItem("loan", "$10,000");
+            window.localStorage.setItem("loan", "€10,000");
             window.localStorage.setItem("rate", "6.99");
             window.localStorage.setItem("term", "60");
             break;
@@ -69,7 +69,7 @@ function Calculate(loan, term, rate) {
             row.setAttribute("scope", "row");
             //the table has a Header, Tbody, Row, Cell, and TextNode
             let cell = row.insertCell();
-            let text = document.createTextNode("$0.00");
+            let text = document.createTextNode("€0.00");
             cell.appendChild(text);
         }
     }
@@ -219,15 +219,15 @@ function validateRate(rate) {
 //Reset button
 function Reset() {
     document.getElementById('myChart').style.display = "none";
-    document.getElementById("totalPrice").value = "$125,000";
-    document.getElementById("downPayment").value = "$25,000";
-    document.getElementById("loan").value = "$100,000";
+    document.getElementById("totalPrice").value = "€125,000";
+    document.getElementById("downPayment").value = "€25,000";
+    document.getElementById("loan").value = "€100,000";
     document.getElementById("rate").value = "3.92";
     document.getElementById("term").value = "360";
-    document.getElementById("monthlypayment").innerText = "$0.00";
-    document.getElementById("totalprincipal").innerText = "$0.00";
-    document.getElementById("totalinterest").innerText = "$0.00";
-    document.getElementById("totalcost").innerText = "$0.00";
+    document.getElementById("monthlypayment").innerText = "€0.00";
+    document.getElementById("totalprincipal").innerText = "€0.00";
+    document.getElementById("totalinterest").innerText = "€0.00";
+    document.getElementById("totalcost").innerText = "€0.00";
     let table = document.getElementById("tbody");
     // If there's already a table, remove it
     while (table.firstChild) {
@@ -238,7 +238,7 @@ function Reset() {
         row.setAttribute("scope", "row");
         //the table has a Header, Tbody, Row, Cell, and TextNode
         let cell = row.insertCell();
-        let text = document.createTextNode("$0.00");
+        let text = document.createTextNode("€0.00");
         cell.appendChild(text);
     }
 }

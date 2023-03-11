@@ -80,7 +80,7 @@
                                 <i>Price</i>
                             </div>
                             <div class="col mr-4">
-                                <input type="text" id="totalPrice" value="$125,000" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" oninput="DownPayment(this.value, document.getElementById('downPayment').value, document.getElementById('loan').value);" />
+                                <input type="text" id="totalPrice" value="€125,000" pattern="^\€\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" oninput="DownPayment(this.value, document.getElementById('downPayment').value, document.getElementById('loan').value);" />
                             </div>
                         </div>
                         <div class="row mb-3 inputoption text-right">
@@ -88,7 +88,7 @@
                                 <i>Down</i>
                             </div>
                             <div class="col mr-4">
-                                <input type="text" id="downPayment" value="$25,000" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"
+                                <input type="text" id="downPayment" value="€25,000" pattern="^\€\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency"
                                        oninput="DownPayment(document.getElementById('totalPrice').value, this.value, document.getElementById('loan').value);" />
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                         Loan Amount:
                     </div>
                     <div class="col mr-4">
-                        <input type="text" id="loan" value="$100,000" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" />
+                        <input type="text" id="loan" value="€100,000" pattern="^\€\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" />
                     </div>
                 </div>
                 <div class="row mb-3">
@@ -137,7 +137,7 @@
                             <h1>Your Monthly Payments</h1>
                         </div>
                         <div class="row justify-content-center pt-5 pb-5">
-                            <h1 id="monthlypayment">$0.00</h1>
+                            <h1 id="monthlypayment">€0.00</h1>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                             </div>
                             <div class="col">
                                 <div class="row justify-content-end pr-5">
-                                    <h3 id="totalprincipal">$0.00</h3>
+                                    <h3 id="totalprincipal">€0.00</h3>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +159,7 @@
                             </div>
                             <div class="col">
                                 <div class="row justify-content-end pr-5">
-                                    <h3 id="totalinterest">$0.00</h3>
+                                    <h3 id="totalinterest">€0.00</h3>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +169,7 @@
                             </div>
                             <div class="col">
                                 <div class="row justify-content-end pr-5">
-                                    <h3 id="totalcost" class="mb-5">$0.00</h3>
+                                    <h3 id="totalcost" class="mb-5">€0.00</h3>
                                 </div>
                             </div>
                         </div>
@@ -194,12 +194,12 @@
                 </thead>
                 <tbody id="tbody">
                     <tr>
-                        <td scope="col">$0.00</td>
-                        <td scope="col">$0.00</td>
-                        <td scope="col">$0.00</td>
-                        <td scope="col">$0.00</td>
-                        <td scope="col">$0.00</td>
-                        <td scope="col">$0.00</td>
+                        <td scope="col">€0.00</td>
+                        <td scope="col">€0.00</td>
+                        <td scope="col">€0.00</td>
+                        <td scope="col">€0.00</td>
+                        <td scope="col">€0.00</td>
+                        <td scope="col">€0.00</td>
                     </tr>
                 </tbody>
             </table>
